@@ -1,0 +1,500 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding-top: 3%;
+}
+.nav {
+  background-color: white;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  padding-right: 10%;
+  padding-left: 10%;
+
+  &-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &-1 a,
+    &-2 a {
+      text-decoration: none;
+      font-size: 14px;
+      color: hsl(257, 7%, 63%);
+      font-weight: 700;
+      transition: all 0.15s;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    & a:hover {
+      color: black;
+    }
+
+    & .sign {
+      padding: 10px 18px;
+      background-color: hsl(180, 66%, 49%);
+      color: white;
+      border-radius: 100px;
+      transition: all 0.15s;
+
+      &:hover {
+        background-color: hsla(180, 66%, 49%, 0.664);
+        color: white;
+      }
+    }
+  }
+
+  & img {
+    margin-right: 50px;
+  }
+}
+
+button {
+  padding: 13px 36px;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: hsla(180, 66%, 49%, 0.664);
+  }
+}
+
+.header {
+  padding: 7% 0;
+  padding-left: 10%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+
+  &-text {
+    margin-top: 4%;
+    & h1 {
+      width: 80%;
+      min-width: 600px;
+      font-size: 60px;
+      line-height: 1.2;
+      color: hsl(255, 11%, 22%);
+      margin-bottom: 0;
+    }
+    & p {
+      width: 70%;
+      min-width: 500px;
+      font-size: 18px;
+      font-weight: 500;
+      color: hsl(257, 7%, 63%);
+      margin-top: 0;
+      margin-bottom: 45px;
+    }
+    & button {
+      border-radius: 100px;
+    }
+  }
+  &-img {
+    min-width: 700px;
+  }
+}
+
+.shorten {
+  width: 80%;
+  height: 150px;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("bg-shorten-desktop.svg");
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  padding: 3.2% 7%;
+  margin-left: 10%;
+  align-items: center;
+  position: absolute;
+  transform: translateY(-50%);
+
+  & input {
+    width: 75%;
+    height: 50px;
+    margin-right: 30px;
+    border: none;
+    padding-left: 30px;
+    outline: none;
+    border-radius: 10px;
+  }
+  & button {
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+  }
+}
+
+.statistics {
+  width: 100%;
+  height: 95vh;
+  background-color: hsla(258, 7%, 63%, 0.192);
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-text {
+    width: 35%;
+    text-align: center;
+    & h1 {
+      color: hsl(260, 8%, 14%);
+      margin-bottom: 0;
+    }
+    & p {
+      color: hsl(257, 7%, 63%);
+    }
+  }
+
+  &-content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    & div {
+      background-color: #fff;
+      width: 25%;
+      height: 240px;
+      border-radius: 7px;
+      padding: 0 35px 10px 35px;
+
+      & .text {
+        width: 100%;
+        padding: 0;
+        transform: translateY(-15%);
+        height: 140px;
+      }
+
+      & p {
+        font-size: 12px;
+        color: hsl(257, 7%, 63%);
+      }
+
+      & h3 {
+        padding-top: 0;
+      }
+
+      & .img {
+        background-color: hsl(257, 27%, 26%);
+        width: 55px;
+        height: 70px;
+        border-radius: 50%;
+        transform: translateY(-35px);
+
+        & img {
+          width: 33px;
+          transform: translateY(53%) translateX(-50%);
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+
+    & .record {
+      transform: translateY(17%);
+    }
+    & .customize {
+      transform: translateY(34%);
+    }
+  }
+}
+
+.boost {
+  width: 100%;
+  padding: 2% 10%;
+  background-image: url("bg-boost-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  & h1 {
+    color: #fff;
+  }
+  & button {
+    border-radius: 50px;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: hsl(260, 8%, 14%);
+  padding: 3% 10%;
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    align-self: flex-start;
+    margin-right: 150px;
+    fill: #fff;
+  }
+  & h4 {
+    color: white;
+    margin-bottom: 35px;
+    margin-top: 0;
+    cursor: pointer;
+  }
+  & p {
+    color: hsl(0, 0%, 75%);
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+  & div {
+    align-self: flex-start;
+  }
+
+  & .social {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+    & img {
+      cursor: pointer;
+    }
+  }
+}
+
+.burger-nav {
+  width: 350px;
+
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 10px;
+  padding: 50px 35px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+
+  & hr {
+    width: 100%;
+    border-color: hsla(258, 7%, 63%, 0.199);
+    border-width: 0.2px;
+  }
+
+  &-links,
+  &-links-2 {
+    display: flex;
+    flex-direction: column;
+
+    & a {
+      text-decoration: none;
+      color: white;
+      margin-bottom: 30px;
+      transition: all 0.15s;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  &-links-2 {
+    margin-top: 20px;
+    & button {
+      border-radius: 100px;
+    }
+  }
+}
+
+.burger-logo {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  width: 35px;
+  display: none;
+  & hr {
+    border-top-width: 3px;
+  }
+}
+.display {
+  display: inline-block;
+}
+
+@media (max-width: 1360px) {
+  .header {
+    &-text {
+      & h1 {
+        min-width: 400px;
+        font-size: 45px;
+        margin-bottom: 20px;
+      }
+      & p {
+        width: 70%;
+        min-width: 400px;
+        font-size: 15px;
+      }
+    }
+    &-img {
+      width: 100%;
+    }
+  }
+
+  .shorten button {
+    width: 25%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .statistics {
+    &-content div {
+      width: 35%;
+    }
+
+    &-text {
+      width: 40%;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .nav {
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+  .header {
+    padding-left: 7%;
+  }
+  .shorten {
+    padding: 3.2% 4%;
+    width: 86%;
+    margin-left: 7%;
+  }
+  .statistics {
+    padding: 10% 7%;
+  }
+  footer {
+    padding: 3% 7%;
+  }
+}
+
+@media (max-width: 970px) {
+  .nav {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+  .header {
+    padding-left: 3%;
+  }
+  .shorten {
+    padding: 3.2% 4%;
+    width: 94%;
+    margin-left: 3%;
+  }
+  .statistics {
+    padding: 10% 3%;
+  }
+  footer {
+    padding: 3% 3%;
+  }
+}
+
+@media (max-width: 880px) {
+  .nav {
+    &-links,
+    &-links-2 {
+      display: none;
+    }
+  }
+  .burger-logo {
+    display: inline-block;
+  }
+  .header {
+    flex-direction: column-reverse;
+    padding-bottom: 16%;
+    padding-left: 0;
+
+    &-text {
+      text-align: center;
+      width: 100%;
+      & h1,
+      & p {
+        display: inline-block;
+        max-width: 450px;
+      }
+      & button {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+  .shorten {
+    transform: translateY(-50%);
+    flex-direction: column;
+
+    & input {
+      width: 100%;
+      margin-right: 0;
+      min-height: 50px;
+    }
+    & button {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 15px;
+    }
+  }
+
+  .statistics {
+    padding-top: 18%;
+    height: 150vh;
+
+    &-text {
+      max-width: 500px;
+      width: 100%;
+    }
+    &-content {
+      flex-direction: column;
+      & div {
+        max-width: 350px;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      & .record,
+      & .recognize {
+        margin-right: 0;
+      }
+    }
+  }
+  .boost {
+    padding-bottom: 7%;
+  }
+
+  footer {
+    flex-direction: column;
+    padding-top: 10%;
+
+    & div,
+    & svg {
+      margin: 0 auto;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+}
